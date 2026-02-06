@@ -32,7 +32,7 @@
                     <li class="nav-item"><a class="nav-link px-3" href="#about">Why Us</a></li>
                     <li class="nav-item"><a class="nav-link px-3" href="#reviews">Reviews</a></li>
                     <li class="nav-item">
-                        <a class="nav-link px-4 btn btn-primary text-white ms-lg-3 shadow-sm rounded-pill" href="#contact">Contact Us</a>
+                        <a class="nav-link px-4 btn btn-primary ms-lg-3 shadow-sm rounded-pill" href="#contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -69,7 +69,7 @@
         <div class="container py-5">
             <div class="text-center mb-5">
                 <h2 class="h1 fw-bold text-navy">Professional Services</h2>
-                <p class="text-muted col-lg-6 mx-auto">Our IICRC-certified technicians use hospital-grade equipment to ensure your property is safe, clean, and dry.</p>
+                <p class="text-muted col-lg-6 mx-auto">Our IICRC-certified technicians use professional-grade equipment to ensure your property is safe, clean, and dry.</p>
             </div>
             <div class="row g-4">
                 <!-- Service 1 -->
@@ -132,39 +132,117 @@
         </div>
     </section>
 
-    <!-- Reviews Section -->
+    <!-- Reviews Section (Carousel) -->
     <section id="reviews" class="py-6 bg-white">
         <div class="container py-5">
-            <h2 class="h2 fw-bold text-navy text-center mb-5">Trusted by Your Neighbors</h2>
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="card bg-light border-0 h-100 p-4 rounded-4">
-                        <div class="card-body">
-                            <div class="text-warning mb-3">★★★★★</div>
-                            <p class="card-text fst-italic text-secondary">"The team arrived within 45 minutes of my call. Professional, clean, and they handled everything with State Farm directly."</p>
-                            <h6 class="fw-bold text-navy mt-4 mb-0">– Sarah Jenkins</h6>
-                            <small class="text-muted">Water Damage Repair</small>
+            <div class="text-center mb-5">
+                <h2 class="h2 fw-bold text-navy">Trusted by Your Neighbors</h2>
+                <!-- Google Reviews Link Button -->
+<a href="https://www.google.com/maps/search/TriStorm+Restoration+Mishawaka+IN" target="_blank" class="d-inline-flex align-items-center justify-content-center mt-2 px-3 py-1 rounded-pill bg-light border text-decoration-none hover-lift">
+    
+    <!-- Google G Logo -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48" class="me-2">
+        <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+        <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+        <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+        <path fill="#34A853" d="M24 48c6.48 0 12.01-2.09 15.61-5.67l-7.73-6c-2.15 1.45-4.92 2.3-7.88 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+    </svg>
+
+    <!-- Your Text Spans -->
+    <span class="fw-bold text-navy me-2">5.0 Rating</span>
+    <span class="text-muted small">on Google Business</span>
+</a>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <!-- Carousel Component -->
+                    <div id="reviewCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        
+                        <!-- Review Cards -->
+                        <div class="carousel-inner pb-5"> 
+                            
+                            <!-- Item 1 (Active) -->
+                            <div class="carousel-item active">
+                                <div class="card bg-light border-0 p-4 rounded-4 shadow-sm mx-3 text-center">
+                                    <div class="card-body">
+                                        <div class="text-primary fs-5 mb-3">★★★★★</div>
+                                        <p class="fst-italic text-secondary mb-4">"Tristrorm is an outstanding construction company from start to finish they came out and fixed what was damaged to my home and there team showed up on time! Their team was professional, reliable, and highly skilled, delivering quality work on time and to a very high standard. Communication was clear throughout the entire process, and they were always willing to go the extra mile to make sure everything was done right. It’s clear they take pride in their work and customer satisfaction. I would highly recommend Tristrorm to anyone looking for dependable and top-quality construction services."</p>
+                                        <h6 class="fw-bold text-navy mb-0">Zak Early</h6>
+                                        <small class="text-primary fw-bold">Storm Damage</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="carousel-item">
+                                <div class="card bg-light border-0 p-4 rounded-4 shadow-sm mx-3 text-center">
+                                    <div class="card-body">
+                                        <div class="text-primary fs-5 mb-3">★★★★★</div>
+                                        <p class="fst-italic text-secondary mb-4">"I have never seen a company like this before! When our home caught fire we pretty much lost everything due to fire and smoke damage. When Tristorm pulled up it was their first priority to make sure that my family and I were all safe and that we had somewhere to go. They wound up putting us up in a hotel for a few days while we figured out what to do next. Since then they have handled everything from the insurance claim down to the rebuild, keeping us well informed of each process. Now that we are all settled back into our home we couldn’t be happier."</p>
+                                        <h6 class="fw-bold text-navy mb-0">jd</h6>
+                                        <small class="text-primary fw-bold">Fire Restoration</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 3 -->
+                            <div class="carousel-item">
+                                <div class="card bg-light border-0 p-4 rounded-4 shadow-sm mx-3 text-center">
+                                    <div class="card-body">
+                                        <div class="text-primary fs-5 mb-3">★★★★★</div>
+                                        <p class="fst-italic text-secondary mb-4">"After the kitchen fire, we thought we lost everything. TriStorm saved our cabinets and got the smoke smell out completely. Truly miracle workers."</p>
+                                        <h6 class="fw-bold text-navy mb-0">Michael Ross</h6>
+                                        <small class="text-primary fw-bold">Fire Restoration</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 4 -->
+                            <div class="carousel-item">
+                                <div class="card bg-light border-0 p-4 rounded-4 shadow-sm mx-3 text-center">
+                                    <div class="card-body">
+                                        <div class="text-primary fs-5 mb-3">★★★★★</div>
+                                        <p class="fst-italic text-secondary mb-4">"The mold remediation team was discrete and efficient. They explained the testing process clearly and left the area spotless."</p>
+                                        <h6 class="fw-bold text-navy mb-0">David Chen</h6>
+                                        <small class="text-primary fw-bold">Mold Remediation</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 5 -->
+                            <div class="carousel-item">
+                                <div class="card bg-light border-0 p-4 rounded-4 shadow-sm mx-3 text-center">
+                                    <div class="card-body">
+                                        <div class="text-primary fs-5 mb-3">★★★★★</div>
+                                        <p class="fst-italic text-secondary mb-4">"TriStorm came out during the worst storm of the year to board up our broken windows. Fast, fair pricing, and polite technicians."</p>
+                                        <h6 class="fw-bold text-navy mb-0">Amanda Lewis</h6>
+                                        <small class="text-primary fw-bold">Storm Damage</small>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card bg-light border-0 h-100 p-4 rounded-4">
-                        <div class="card-body">
-                            <div class="text-warning mb-3">★★★★★</div>
-                            <p class="card-text fst-italic text-secondary">"After the kitchen fire, we thought we lost everything. TriStorm saved our cabinets and got the smoke smell out completely."</p>
-                            <h6 class="fw-bold text-navy mt-4 mb-0">– Michael Ross</h6>
-                            <small class="text-muted">Fire Restoration</small>
+
+                        <!-- Controls (Arrows) -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+                        <!-- Indicators (Dots) -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                            <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="3"></button>
+                            <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="4"></button>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card bg-light border-0 h-100 p-4 rounded-4">
-                        <div class="card-body">
-                            <div class="text-warning mb-3">★★★★★</div>
-                            <p class="card-text fst-italic text-secondary">"Honest pricing and great communication. They explained every step of the drying process."</p>
-                            <h6 class="fw-bold text-navy mt-4 mb-0">– David Chen</h6>
-                            <small class="text-muted">Mold Remediation</small>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -195,14 +273,22 @@
                             <span class="fs-4">📍</span>
                         </div>
                         <div>
-                            <h6 class="fw-bold text-navy mb-0">Service Area</h6>
-                            <p class="mb-0 text-muted">Serving the Entire Metro Area</p>
+                            <h6 class="fw-bold text-navy mb-0">Our Location</h6>
+                            <p class="mb-0 text-muted">1821 Clover Rd UNIT 2<br>Mishawaka, IN 46545</p>
                         </div>
                     </div>
                     
                      <!-- Map Embed -->
                     <div class="mt-4 rounded-4 overflow-hidden shadow-sm border" style="height: 200px;">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0192345678!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ2JzI5LjYiTiAxMjLCsDI1JzA5LjgiVw!5e0!3m2!1sen!2sus!4v123456789" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.008818393232!2d-86.15672388885856!3d41.677152977852465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8816ce3ff0119801%3A0x99dd89ecb00124cc!2s1821%20Clover%20Rd%20UNIT%202%2C%20Mishawaka%2C%20IN%2046545!5e0!3m2!1sen!2sus!4v1770400561631!5m2!1sen!2sus" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </div>
 
@@ -216,7 +302,7 @@
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label text-navy fw-bold small">Phone Number</label>
-                                <input type="tel" class="form-control bg-light border-0" placeholder="(555) ...">
+                                <input type="tel" class="form-control bg-light border-0" placeholder="(574) ...">
                             </div>
                             <div class="col-12">
                                 <label class="form-label text-navy fw-bold small">Service Needed</label>
