@@ -199,7 +199,7 @@
                                 <div class="card bg-light border-0 p-4 rounded-4 shadow-sm mx-3 text-center">
                                     <div class="card-body">
                                         <div class="text-primary fs-5 mb-3">★★★★★</div>
-                                        <p class="fst-italic text-secondary mb-4"><br>"I know for a fact that they care about the customer and the work that they are doing for them and that can be rare.  They understand the need, the process and the importance of their profession."<br><br><br></p>
+                                        <p class="fst-italic text-secondary mb-4"><br><br><br>"I know for a fact that they care about the customer and the work that they are doing for them and that can be rare.  They understand the need, the process and the importance of their profession."<br><br><br></p>
                                         <h6 class="fw-bold text-navy mb-0">John Amos</h6>
                                         <small class="text-primary fw-bold">Fire Damage & Contents Services</small>
                                     </div>
@@ -283,7 +283,7 @@
                             <span class="fs-4">📞</span>
                         </div>
                         <div>
-                            <h6 class="fw-bold text-navy mb-0">Available 24/7</h6>
+                            <h6 class="fw-bold text-navy mb-0">24/7 Dispatch</h6>
                             <p class="mb-0 fs-5">(574) 383-0836</p>
                         </div>
                     </div>
@@ -322,7 +322,7 @@
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label text-navy fw-bold small">Phone Number</label>
-                                <input type="tel" class="form-control bg-light border-0" placeholder="Your number">
+                                <input type="tel" class="form-control bg-light border-0" placeholder="(574) ...">
                             </div>
                             <div class="col-12">
                                 <label class="form-label text-navy fw-bold small">Service Needed</label>
@@ -375,7 +375,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </form>
                 </div>
@@ -399,25 +398,7 @@
     <!-- Local Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom Script to Close Mobile Menu on Click -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Select the navbar elements
-            const navLinks = document.querySelectorAll('.navbar-nav a');
-            const navbarToggler = document.querySelector('.navbar-toggler');
-            const navbarCollapse = document.getElementById('navbarNav');
-
-            // Add click event to each link
-            navLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    // Check if the menu is visibly open (has the 'show' class)
-                    if (navbarCollapse.classList.contains('show')) {
-                        // Simulate a click on the hamburger button to close it
-                        navbarToggler.click();
-                    }
-                });
-            });
-        });
-    </script>
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
 </body>
 </html>

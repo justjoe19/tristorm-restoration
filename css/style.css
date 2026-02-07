@@ -15,7 +15,7 @@
 html {
     /* Ensures anchor links (like #contact) stop BELOW the sticky navbar */
     scroll-padding-top: var(--navbar-height);
-    /* ADDED: Smooth scrolling so links glide instead of jumping */
+    /* Smooth scrolling so links glide instead of jumping */
     scroll-behavior: smooth;
 }
 
