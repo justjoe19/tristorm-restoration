@@ -1,14 +1,18 @@
 /* --- Modern Luxury Theme Variables (Black & Gold) --- */
 :root {
-    --primary: #C5A059;       /* Muted Metallic Gold */
-    --primary-dark: #b08d4b;  /* Darker Gold for hover */
-    --black: #121212;         /* Deep Rich Black */
+    --primary: #C5A059;
+    /* Muted Metallic Gold */
+    --primary-dark: #b08d4b;
+    /* Darker Gold for hover */
+    --black: #121212;
+    /* Deep Rich Black */
     --dark-grey: #2c2c2c;
-    --light-bg: #fdfdfd;      /* Ultra-light grey for depth */
+    --light-bg: #fdfdfd;
+    /* Ultra-light grey for depth */
     --white: #ffffff;
-    
+
     /* Variable for spacing */
-    --navbar-height: 85px; 
+    --navbar-height: 85px;
 }
 
 /* --- Global Settings --- */
@@ -21,27 +25,49 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    color: #555; 
+    color: #555;
     background-color: var(--white);
     line-height: 1.7;
     width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, .navbar-brand {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
     font-family: 'Lexend', sans-serif;
     letter-spacing: -0.5px;
     color: var(--black);
 }
 
 /* --- Color Overrides --- */
-.text-navy { color: var(--black) !important; }
-.bg-navy { background-color: var(--black) !important; }
-.text-primary { color: var(--primary) !important; }
+.text-navy {
+    color: var(--black) !important;
+}
+
+.bg-navy {
+    background-color: var(--black) !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
 
 /* Subtles for badges/icons */
-.bg-primary-subtle { background-color: rgba(197, 160, 89, 0.15) !important; }
-.bg-danger-subtle { background-color: rgba(220, 53, 69, 0.08) !important; }
-.bg-info-subtle { background-color: rgba(13, 202, 240, 0.08) !important; }
+.bg-primary-subtle {
+    background-color: rgba(197, 160, 89, 0.15) !important;
+}
+
+.bg-danger-subtle {
+    background-color: rgba(220, 53, 69, 0.08) !important;
+}
+
+.bg-info-subtle {
+    background-color: rgba(13, 202, 240, 0.08) !important;
+}
 
 /* --- Navbar Customization --- */
 .navbar-light .navbar-nav .nav-link {
@@ -72,8 +98,8 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     transition: all 0.3s ease;
 }
 
-.btn-primary:hover, 
-.btn-primary:active, 
+.btn-primary:hover,
+.btn-primary:active,
 .btn-primary.active {
     background-color: var(--primary-dark) !important;
     border-color: var(--primary-dark) !important;
@@ -105,13 +131,15 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 }
 
 /* --- Form Styling --- */
-.form-control, .form-select {
+.form-control,
+.form-select {
     padding: 0.8rem 1rem;
     font-size: 0.95rem;
     border: 1px solid #e0e0e0;
 }
 
-.form-control:focus, .form-select:focus {
+.form-control:focus,
+.form-select:focus {
     box-shadow: 0 0 0 0.25rem rgba(197, 160, 89, 0.15);
     border-color: var(--primary);
     background-color: #fff;
@@ -120,8 +148,8 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 /* --- Mobile Menu Scrolling Fix --- */
 @media (max-width: 991px) {
     .navbar-collapse {
-        max-height: 80vh; 
-        overflow-y: auto; 
+        max-height: 80vh;
+        overflow-y: auto;
         padding-bottom: 20px;
     }
 }
