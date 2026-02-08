@@ -34,7 +34,7 @@
                 <ul class="navbar-nav ms-auto fw-medium">
                     <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link px-3" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="#about">Why Us</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#about">About Us</a></li>
                     <li class="nav-item"><a class="nav-link px-3" href="#reviews">Reviews</a></li>
                     <li class="nav-item">
                         <a class="px-4 btn btn-primary ms-lg-3 shadow-sm rounded-pill" href="#contact">Contact Us</a>
@@ -48,7 +48,7 @@
     <header id="home" class="hero-section d-flex align-items-center">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 py-5">
+                <div class="col-lg-6 py-4">
                     <div
                         class="d-inline-block bg-primary-subtle text-primary px-3 py-1 rounded-pill fw-bold small mb-3">
                         100% Insurance Claim Assistance
@@ -66,14 +66,15 @@
                 </div>
                 <div class="col-lg-6">
                     <img src="images/hero.webp" alt="TriStorm Restoration Professional Equipment"
-                        class="img-fluid rounded-4 shadow-lg" style="height: 400px; width: 100%; object-fit: cover; border: 2px solid #D4AF37">
+                        class="img-fluid rounded-4 shadow-lg"
+                        style="height: 400px; width: 100%; object-fit: cover; border: 2px solid #D4AF37">
                 </div>
             </div>
         </div>
     </header>
 
     <!-- Services Section -->
-    <section id="services" class="py-6 bg-light">
+    <section id="services" class="py-4 bg-light">
         <div class="container py-5">
             <div class="text-center mb-5">
                 <h2 class="h1 fw-bold text-navy">Professional Services</h2>
@@ -151,28 +152,130 @@
         </div>
     </section>
 
-    <!-- Stats / Trust Section -->
-    <section id="about" class="py-5 bg-navy text-white">
-        <div class="container py-4">
-            <div class="row g-4 text-center">
-                <div class="col-md-4 border-end border-white-50">
-                    <div class="display-4 fw-bold mb-1">24/7</div>
-                    <p class="text-white-50 mb-0">Emergency Response</p>
+    <!-- Team & Story Section -->
+    <section id="about" class="py-4 bg-light">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <!-- Team Members -->
+                <div class="col-lg-7">
+                    <div class="text-center mb-5">
+                        <h2 class="h1 fw-bold text-navy">Meet Our Team</h2>
+                        <p class="text-muted">The certified professionals dedicated to restoring your property.</p>
+                    </div>
+                    <div class="row g-4">
+                        <!-- Team Member 1 -->
+                        <div class="col-md-4">
+                            <div class="team-member-card text-center border-0 h-100">
+                                <img src="images/erin.webp" class="rounded-circle" alt="Erin Smith">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title fw-bold mb-1 text-primary">Erin Smith</h5>
+                                    <p class="card-text">Co-Owner, Finance & Operations</p>
+                                    <button type="button" class="btn btn-outline-gold mt-auto" data-bs-toggle="modal"
+                                        data-bs-target="#erinModal">
+                                        Read Bio
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Team Member 2 -->
+                        <div class="col-md-4">
+                            <div class="team-member-card text-center border-0 h-100">
+                                <img src="images/hannah.webp" class="rounded-circle" alt="Hannah Hoetger">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title fw-bold mb-1 text-primary">Hannah Hoetger</h5>
+                                    <p class="card-text">Co-Owner, Client Relations</p>
+                                    <button type="button" class="btn btn-outline-gold mt-auto" data-bs-toggle="modal"
+                                        data-bs-target="#hannahModal">
+                                        Read Bio
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Team Member 3 -->
+                        <div class="col-md-4">
+                            <div class="team-member-card text-center border-0 h-100">
+                                <img src="images/hayley.webp" class="rounded-circle" alt="Hayley McCarty">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title fw-bold mb-1 text-primary">Hayley McCarty</h5>
+                                    <p class="card-text">Co-Owner, Marketing</p>
+                                    <button type="button" class="btn btn-outline-gold mt-auto" data-bs-toggle="modal"
+                                        data-bs-target="#hayleyModal">
+                                        Read Bio
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Team Member 4 -->
+                        <div class="col-md-4">
+                            <div class="team-member-card text-center border-0 h-100">
+                                <img src="images/logan.webp" class="rounded-circle" alt="Logan Burnett">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title fw-bold mb-1 text-primary">Logan Burnett</h5>
+                                    <p class="card-text">Co-Owner, Operations</p>
+                                    <button type="button" class="btn btn-outline-gold mt-auto" data-bs-toggle="modal"
+                                        data-bs-target="#loganModal">
+                                        Read Bio
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Team Member 5 -->
+                        <div class="col-md-4">
+                            <div class="team-member-card text-center border-0 h-100">
+                                <img src="images/jon.webp" class="rounded-circle" alt="Jon Smith">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title fw-bold mb-1 text-primary">Jon Smith</h5>
+                                    <p class="card-text">Managing Director</p>
+                                    <button type="button" class="btn btn-outline-gold mt-auto" data-bs-toggle="modal"
+                                        data-bs-target="#jonModal">
+                                        Read Bio
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Team Member 6 -->
+                        <div class="col-md-4">
+                            <div class="team-member-card text-center border-0 h-100">
+                                <img src="images/josh.webp" class="rounded-circle" alt="Josh Hoetger">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title fw-bold mb-1 text-primary">Josh Hoetger</h5>
+                                    <p class="card-text">Claims Consultant</p>
+                                    <button type="button" class="btn btn-outline-gold mt-auto" data-bs-toggle="modal"
+                                        data-bs-target="#joshModal">
+                                        Read Bio
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4 border-end border-white-50">
-                    <div class="display-4 fw-bold mb-1">500+</div>
-                    <p class="text-white-50 mb-0">Properties Restored</p>
-                </div>
-                <div class="col-md-4">
-                    <div class="display-4 fw-bold mb-1">100%</div>
-                    <p class="text-white-50 mb-0">Insurance Accepted</p>
+                <!-- Our Story -->
+                <div class="col-lg-5">
+                    <div class="ps-lg-4">
+                        <h3 class="h2 fw-bold text-navy mb-3">Our Story</h3>
+                        <p class="text-muted">At TriStorm Restoration, we're dedicated to helping home and business
+                            owners navigate property damage with honesty, compassion, and dependable care. With strong
+                            backgrounds as business owners in industry-related fields, we bring experience, integrity,
+                            and leadership to every project. After seeing firsthand how overwhelming and confusing the
+                            restoration process can be, we set out to build a company rooted in faith, transparency, and
+                            genuine care.</p>
+                        <p class="text-muted">Our team met through our daughters' cheerleading gym, and we're all
+                            big-time cheer families who love showing up to competitions and cheering our girls on every
+                            step of the way. That shared passion and connection helped shape the heart behind TriStorm.
+                            We proudly serve Michiana and support our community with care you can trust</p>
+                        <h3 class="h2 fw-bold text-navy mb-3">Our Mission</h3>
+                        <p class="text-muted">At TriStorm Restoration, our mission is to serve home and business owners
+                            with integrity, compassion, and excellence. Guided by faith and a commitment to quality, we
+                            strive to restore more than just buildings — we restore peace of mind through clear
+                            communication, dependable service, and trusted results.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Reviews Section (Carousel) -->
-    <section id="reviews" class="py-6 bg-white">
+    <section id="reviews" class="py-4 bg-white">
         <div class="container py-5">
             <div class="text-center mb-5">
                 <h2 class="h2 fw-bold text-navy">Trusted by Your Neighbors</h2>
@@ -314,7 +417,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-6 bg-light position-relative">
+    <section id="contact" class="py-4 bg-light position-relative">
         <div class="container py-5">
             <div class="row g-5">
                 <!-- Contact Info -->
@@ -447,6 +550,124 @@
             </p>
         </div>
     </footer>
+
+    <!-- Modals -->
+    <!-- Erin's Modal -->
+    <div class="modal fade" id="erinModal" tabindex="-1" aria-labelledby="erinModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="erinModalLabel">Erin Smith</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Erin is an owner of TriStorm Restoration and oversees all financial operations, including accounts
+                    payable and accounts receivable, while also managing day-to-day office operations. With strong
+                    leadership skills, she plays a critical role in keeping the company running smoothly behind the
+                    scenes, ensuring accuracy, organization, and accountability across every project. Outside of work,
+                    Erin is a busy mom of six - including twins! She enjoys hosting friends and family at her home, and
+                    she's known for putting together some of the best Notre Dame tailgates.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hannah's Modal -->
+    <div class="modal fade" id="hannahModal" tabindex="-1" aria-labelledby="hannahModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="hannahModalLabel">Hannah Hoetger</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Hannah is an owner of TriStorm Restoration, leading client relations and community outreach. With a
+                    background in healthcare and customer service, she brings a compassionate, people-first approach to
+                    every project. She's passionate about connecting with people and helping home and business owners
+                    feel supported during unexpected claims and property damage. When she's not working, Hannah enjoys
+                    spending time with her family, traveling, relaxing on the lake, and cuddling with her two Frenchies.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hayley's Modal -->
+    <div class="modal fade" id="hayleyModal" tabindex="-1" aria-labelledby="hayleyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="hayleyModalLabel">Hayley McCarty</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Hayley is an owner of TriStorm Restoration and leads all marketing, advertising, and social media.
+                    She oversees branding and the development of marketing materials and promotional assets, helping
+                    ensure a consistent and professional presence across all platforms. In her role, Hayley drives
+                    TriStorm's brand strategy and visual identity, creating engaging campaigns and cohesive messaging
+                    that strengthen the company's presence in the community and connect with home and business owners.
+                    Away from the office, Hayley is a devoted mom who enjoys spending time with her family, relaxing by
+                    her pool, and rocking out at concerts whenever she can get a night out.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Logan's Modal -->
+    <div class="modal fade" id="loganModal" tabindex="-1" aria-labelledby="loganModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loganModalLabel">Logan Burnett</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Logan leads operational planning and execution at TriStorm Restoration, focusing on efficiency and
+                    consistent project outcomes. As a successful business owner, he brings a strong operational mindset,
+                    hands-on experience, and practical problem-solving skills to every job. He works closely with field
+                    teams to coordinate schedules, manage workflows, and maintain quality control, helping ensure each
+                    project is completed to TriStorm's high standards. Logan is a devoted dad to three and a loyal
+                    friend to many. He prioritizes his family and enjoys staying active at the gym.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Jon's Modal -->
+    <div class="modal fade" id="jonModal" tabindex="-1" aria-labelledby="jonModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="jonModalLabel">Jon Smith</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Jon is the Managing Director at TriStorm Restoration, helping guide daily operations and ensuring
+                    projects are completed efficiently and professionally. With years of experience as a successful
+                    business owner, Jon brings strong leadership, organization, and hands-on industry knowledge to the
+                    team. He plays a key role in coordinating crews, managing projects, and supporting TriStorm's
+                    commitment to quality workmanship and dependable service. Jon is a devoted family man and avid
+                    outdoorsman who actively participates in community outreach initiatives and believes in giving back
+                    whenever possible.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Josh's Modal -->
+    <div class="modal fade" id="joshModal" tabindex="-1" aria-labelledby="joshModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="joshModalLabel">Josh Hoetger</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Josh works as an independent claims consultant, supporting the TriStorm Restoration team with
+                    guidance on insurance-related matters. Josh is a trusted resource who helps the team navigate
+                    complex claims and restoration projects. With well over a decade of experience in the insurance and
+                    restoration industry, Josh has worked on large, complex losses involving both repairs and full
+                    restorations. He holds multiple industry certifications and is known as a trusted name in the field,
+                    bringing valuable insight and expertise to the TriStorm team. When he's not working, Josh enjoys
+                    coaching his boys' soccer teams, traveling, and camping with family and friends.
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Local Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
