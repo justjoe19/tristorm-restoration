@@ -167,3 +167,11 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
         box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
 }
+
+/* --- Review Carousel --- */
+#reviewCarousel .carousel-item .card-body {
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
