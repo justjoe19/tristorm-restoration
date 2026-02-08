@@ -109,10 +109,13 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     transition: all 0.3s ease;
 }
 
-.btn-outline-navy:hover {
-    background-color: transparent;
-    color: var(--black) !important;
+.btn-outline-navy:hover,
+.btn-outline-navy:active {
+    background-color: var(--dark-grey);
+    color: var(--white) !important;
+    border-color: var(--dark-grey);
     transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* --- Cards & Sections --- */
