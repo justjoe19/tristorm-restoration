@@ -198,12 +198,12 @@ h6,
 
 /* Fix carousel card heights for mobile */
 #reviewCarousel .carousel-inner {
-    min-height: 550px;
+    min-height: 450px;
     /* Taller for mobile to accommodate longest review */
 }
 
 #reviewCarousel .carousel-item {
-    min-height: 550px;
+    min-height: 450px;
     /* Match the inner height */
     position: absolute;
     width: 100%;
@@ -214,7 +214,7 @@ h6,
 }
 
 #reviewCarousel .card {
-    height: 530px;
+    height: 430px;
     /* Fixed height instead of min-height */
     display: flex;
     flex-direction: column;
