@@ -168,10 +168,51 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     }
 }
 
-/* --- Review Carousel --- */
-#reviewCarousel .carousel-item .card-body {
-    min-height: 320px;
+/* Fix carousel card heights for mobile */
+#reviewCarousel .carousel-inner {
+    min-height: 550px; /* Taller for mobile to accommodate longest review */
+}
+
+#reviewCarousel .carousel-item {
+    min-height: 550px; /* Match the inner height */
+    position: absolute;
+    width: 100%;
+}
+
+#reviewCarousel .carousel-item.active {
+    position: relative;
+}
+
+#reviewCarousel .card {
+    height: 530px; /* Fixed height instead of min-height */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+}
+
+#reviewCarousel .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    overflow: hidden;
+}
+
+#reviewCarousel .card-body p {
+    flex-grow: 1;
+    overflow-y: auto; /* Allow scrolling if text is too long */
+}
+
+/* Adjust heights for desktop */
+@media (min-width: 768px) {
+    #reviewCarousel .carousel-inner {
+        min-height: 400px;
+    }
+    
+    #reviewCarousel .carousel-item {
+        min-height: 400px;
+    }
+    
+    #reviewCarousel .card {
+        height: 380px;
+    }
 }
