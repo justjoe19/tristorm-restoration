@@ -564,7 +564,9 @@
 
                 <!-- Contact Form -->
                 <div class="col-lg-7">
-                    <form class="bg-white p-4 p-md-5 rounded-4 shadow-sm h-100">
+                    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="bg-white p-4 p-md-5 rounded-4 shadow-sm h-100">
+                        <input type="hidden" name="form-name" value="contact" />
+                        <input type="hidden" name="bot-field" />
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label for="fullName" class="form-label text-navy fw-bold small">Full Name</label>
@@ -578,9 +580,11 @@
                                 <label for="serviceNeeded" class="form-label text-navy fw-bold small">Service Needed</label>
                                 <select class="form-select bg-light border-0" id="serviceNeeded">
                                     <option selected>General Inquiry</option>
-                                    <option>Fire/Smoke</option>
+                                    <option>Fire/Smoke Damage</option>
                                     <option>Storm Damage</option>
                                     <option>Water Damage</option>
+                                    <option>Mold Remediation</option>
+                                    <option>Contents & Inventory</option>
                                 </select>
                             </div>
                             <div class="col-12">
