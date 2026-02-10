@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const navbarCollapse = document.getElementById('navbarNav');
     const nav = document.querySelector('nav'); // Select the navbar to measure its height
 
+    // Check for prefers-reduced-motion
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             // Get the target section ID (e.g., "#contact")
@@ -32,11 +35,22 @@ document.addEventListener('DOMContentLoaded', function () {
                     const elementPosition = targetElement.getBoundingClientRect().top;
                     const offsetPosition = elementPosition + window.scrollY - navHeight;
 
-                    // 4. Scroll to the calculated position
+                    // 4. Scroll to the calculated position, respecting prefers-reduced-motion
                     window.scrollTo({
                         top: offsetPosition,
-                        behavior: "smooth"
+                        behavior: prefersReducedMotion.matches ? "auto" : "smooth"
                     });
+
+                    // 5. Manage keyboard focus:
+                    // After scrolling, set focus to the target element.
+                    // This is important for screen reader users and keyboard navigators.
+                    if (targetElement) {
+                        // Ensure the element can receive focus
+                        if (!targetElement.hasAttribute('tabindex')) {
+                            targetElement.setAttribute('tabindex', '-1');
+                        }
+                        targetElement.focus();
+                    }
                 }
             }
         });

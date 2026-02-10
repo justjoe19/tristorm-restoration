@@ -414,7 +414,7 @@
                             <div class="carousel-item active">
                                 <div class="card bg-light border-0 p-4 rounded-4 shadow-sm mx-3 text-center">
                                     <div class="card-body">
-                                        <div class="text-primary fs-5 mb-3">★★★★★</div>
+                                        <div class="text-primary fs-5 mb-3" aria-label="5-star rating">★★★★★</div>
                                         <p class="fst-italic text-secondary mb-4">"We are so grateful that we were put
                                             in touch with Josh (owner), He took all the stress away from dealing with
                                             the Insurance company, providing a storage unit, trash removal and much
@@ -433,7 +433,7 @@
                             <div class="carousel-item">
                                 <div class="card bg-light border-0 p-4 rounded-4 shadow-sm mx-3 text-center">
                                     <div class="card-body">
-                                        <div class="text-primary fs-5 mb-3">★★★★★</div>
+                                        <div class="text-primary fs-5 mb-3" aria-label="5-star rating">★★★★★</div>
                                         <p class="fst-italic text-secondary mb-4">"I know for a fact that
                                             they care about the customer and the work that they are doing for them and
                                             that can be rare. They understand the need, the process and the importance
@@ -448,7 +448,7 @@
                             <div class="carousel-item">
                                 <div class="card bg-light border-0 p-4 rounded-4 shadow-sm mx-3 text-center">
                                     <div class="card-body">
-                                        <div class="text-primary fs-5 mb-3">★★★★★</div>
+                                        <div class="text-primary fs-5 mb-3" aria-label="5-star rating">★★★★★</div>
                                         <p class="fst-italic text-secondary mb-4">"Josh wash amazing for us
                                             when we had damage to our home from a big storm. He helped us get ever We
                                             needed to restore our home! Simply the best."</p>
@@ -462,7 +462,7 @@
                             <div class="carousel-item">
                                 <div class="card bg-light border-0 p-4 rounded-4 shadow-sm mx-3 text-center">
                                     <div class="card-body">
-                                        <div class="text-primary fs-5 mb-3">★★★★★</div>
+                                        <div class="text-primary fs-5 mb-3" aria-label="5-star rating">★★★★★</div>
                                         <p class="fst-italic text-secondary mb-4">"I have never seen a company like this
                                             before! When our home caught fire we pretty much lost everything due to fire
                                             and smoke damage. When Tristorm pulled up it was their first priority to
@@ -482,7 +482,7 @@
                             <div class="carousel-item">
                                 <div class="card bg-light border-0 p-4 rounded-4 shadow-sm mx-3 text-center">
                                     <div class="card-body">
-                                        <div class="text-primary fs-5 mb-3">★★★★★</div>
+                                        <div class="text-primary fs-5 mb-3" aria-label="5-star rating">★★★★★</div>
                                         <p class="fst-italic text-secondary mb-4">"Tristorm responds quickly
                                             and professionally! Very detailed in the work they do and make sure they go
                                             above and beyond! I'd recommend them to anyone!"</p>
@@ -534,7 +534,7 @@
 
                     <div class="d-flex align-items-center mb-4">
                         <div class="bg-white p-3 rounded-circle shadow-sm text-primary me-3">
-                            <span class="fs-4">📞</span>
+                            <span class="fs-4" aria-hidden="true">📞</span>
                         </div>
                         <div>
                             <h6 class="fw-bold text-navy mb-0">24/7 Dispatch</h6>
@@ -544,7 +544,7 @@
 
                     <div class="d-flex align-items-center">
                         <div class="bg-white p-3 rounded-circle shadow-sm text-primary me-3">
-                            <span class="fs-4">📍</span>
+                            <span class="fs-4" aria-hidden="true">📍</span>
                         </div>
                         <div>
                             <h6 class="fw-bold text-navy mb-0">Our Location</h6>
@@ -557,7 +557,7 @@
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1826.9791949800947!2d-86.15420665213246!3d41.678181186211894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8816cfe32164f0ab%3A0xac4f1b25ee3dcfce!2sTriStorm%20Restoration!5e0!3m2!1sen!2sus!4v1770404159537!5m2!1sen!2sus"
                             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
+                            referrerpolicy="no-referrer-when-downgrade" title="Google Map of TriStorm Restoration Location">
                         </iframe>
                     </div>
                 </div>
@@ -567,16 +567,16 @@
                     <form class="bg-white p-4 p-md-5 rounded-4 shadow-sm h-100">
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <label class="form-label text-navy fw-bold small">Full Name</label>
-                                <input type="text" class="form-control bg-light border-0" placeholder="Your name">
+                                <label for="fullName" class="form-label text-navy fw-bold small">Full Name</label>
+                                <input type="text" class="form-control bg-light border-0" id="fullName" placeholder="Your name">
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label text-navy fw-bold small">Phone Number</label>
-                                <input type="tel" class="form-control bg-light border-0" placeholder="Your number">
+                                <label for="phoneNumber" class="form-label text-navy fw-bold small">Phone Number</label>
+                                <input type="tel" class="form-control bg-light border-0" id="phoneNumber" placeholder="Your number">
                             </div>
                             <div class="col-12">
-                                <label class="form-label text-navy fw-bold small">Service Needed</label>
-                                <select class="form-select bg-light border-0">
+                                <label for="serviceNeeded" class="form-label text-navy fw-bold small">Service Needed</label>
+                                <select class="form-select bg-light border-0" id="serviceNeeded">
                                     <option selected>General Inquiry</option>
                                     <option>Fire/Smoke</option>
                                     <option>Storm Damage</option>
@@ -584,8 +584,8 @@
                                 </select>
                             </div>
                             <div class="col-12">
-                                <label class="form-label text-navy fw-bold small">Details</label>
-                                <textarea class="form-control bg-light border-0" rows="3"
+                                <label for="details" class="form-label text-navy fw-bold small">Details</label>
+                                <textarea class="form-control bg-light border-0" id="details" rows="3"
                                     placeholder="Tell us what happened..."></textarea>
                             </div>
 
