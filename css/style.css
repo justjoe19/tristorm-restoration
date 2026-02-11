@@ -61,14 +61,14 @@ h6,
     background-color: rgba(253, 187, 45, 0.12) !important;
 }
 
-/* Metallic gold text effect */
+/* Metallic gold text effect (unused)
 .gold-gradient-text {
     background: var(--gold-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
     font-weight: 700;
-}
+}. */
 
 /* --- Navigation --- */
 .navbar {
