@@ -1,6 +1,6 @@
 /* --- Modern Luxury Theme Variables (Black & Gold) --- */
 :root {
-    /* Primary Gold Palette - Matched to your new logo highlights */
+    /* Primary Gold Palette */
     --primary: #C5A32B;
     --primary-dark: #B8860B;
     --gold-gradient: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 50%, var(--primary-dark) 100%);
