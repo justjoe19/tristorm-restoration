@@ -530,7 +530,7 @@
         <div class="container py-5 overflow-x-hidden">
             <div class="row g-5">
                 <!-- Contact Info -->
-                <div class="col-lg-5">
+                <div class="col-lg-4">
                     <h2 class="display-5 fw-bold text-navy mb-4">Start Your Recovery</h2>
                     <p class="lead text-muted mb-5">Don't wait. Water and smoke damage gets worse by the hour. Call us
                         now or fill out the form.</p>
@@ -567,7 +567,7 @@
                 </div>
 
                 <!-- Contact Form -->
-                <div class="col-lg-7">
+                <div class="col-lg-8">
                     <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field"
                         class="bg-white p-4 p-md-5 rounded-4 shadow-sm h-100">
                         <input type="hidden" name="form-name" value="contact" />
@@ -576,14 +576,19 @@
                             <div class="col-md-6">
                                 <label for="fullName" class="form-label text-navy fw-bold small">Full Name</label>
                                 <input type="text" class="form-control bg-light border-0" id="fullName" name="full-name"
-                                    placeholder="Your name">
+                                    placeholder="Your name" required>
                             </div>
                             <div class="col-md-6">
                                 <label for="phoneNumber" class="form-label text-navy fw-bold small">Phone Number</label>
                                 <input type="tel" class="form-control bg-light border-0" id="phoneNumber"
-                                    name="phone-number" placeholder="Your number">
+                                    name="phone-number" placeholder="Your number" required pattern="[0-9]{10}" title="Please enter a 10-digit phone number" pattern="[0-9]{10}" title="Please enter a 10-digit phone number">
                             </div>
-                            <div class="col-12">
+                            <div class="col-md-6">
+                                <label for="emailAddress" class="form-label text-navy fw-bold small">Email Address</label>
+                                <input type="email" class="form-control bg-light border-0" id="emailAddress"
+                                    name="email-address" placeholder="Your email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address">
+                            </div>
+                            <div class="col-md-6">
                                 <label for="serviceNeeded" class="form-label text-navy fw-bold small">Service
                                     Needed</label>
                                 <select class="form-select bg-light border-0" id="serviceNeeded" name="service">
@@ -597,8 +602,8 @@
                             </div>
                             <div class="col-12">
                                 <label for="details" class="form-label text-navy fw-bold small">Details</label>
-                                <textarea class="form-control bg-light border-0" id="details" name="message" rows="3"
-                                    placeholder="Tell us what happened..."></textarea>
+                                <textarea class="form-control bg-light border-0" id="details" name="message" rows="5"
+                                    placeholder="Tell us what happened..." required></textarea>
                             </div>
 
                             <div class="col-12 mt-4">
