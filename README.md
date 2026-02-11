@@ -1,5 +1,7 @@
 # TriStorm Restoration Website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f083acc8-09bb-4802-8cfa-ebda8dc0cc28/deploy-status)](https://app.netlify.com/projects/tristorm-restoration/deploys)
+
 ## Project Overview
 
 The TriStorm Restoration website is a professional, responsive static site designed to showcase restoration services (water, fire, storm damage, mold remediation, contents & inventory) in the Michiana area. It emphasizes 24/7 emergency response, insurance claim assistance, and a compassionate, integrity-driven approach to helping home and business owners.
@@ -13,7 +15,6 @@ The TriStorm Restoration website is a professional, responsive static site desig
 *   **Contact & Emergency Form:** A Netlify-powered contact form for inquiries and emergency service requests, alongside direct contact information and a Google Maps embed.
 *   **Social Media Integration:** Links to TriStorm Restoration's presence on Facebook and Instagram.
 *   **SEO Optimized:** Includes meta descriptions, Open Graph, Twitter Card, and Schema.org JSON-LD for enhanced search engine visibility and rich snippets.
-*   **Smooth Scrolling Navigation:** JavaScript-enhanced internal navigation with scroll offset for fixed header and accessibility features (`prefers-reduced-motion`, keyboard focus).
 *   **Modern Aesthetic:** A "Modern Luxury" black and gold theme with custom typography (`Inter` and `Lexend` fonts).
 
 ## Technologies Used
@@ -23,6 +24,13 @@ The TriStorm Restoration website is a professional, responsive static site desig
 *   **JavaScript (ES6+):** For interactive elements and smooth scrolling.
 *   **Bootstrap 5:** Front-end framework for responsive design and UI components (Navigation, Cards, Carousel, Forms, Modals).
 *   **Netlify Forms:** For handling contact form submissions.
+
+## Lead Management (Netlify Forms)
+Leads from the website are processed automatically via Netlify. 
+1. **Notifications:** Email alerts are routed to `tristorm.llc@gmail.com`.
+2. **Dashboard:** Log in to the Netlify account, select the project, and click the **Forms** tab.
+3. **Data:** Submissions are stored in the **contact** folder where they can be viewed or exported as a CSV.
+4. **Spam Protection:** Includes a hidden "honeypot" field to filter out automated bot submissions.
 
 ## Setup & Local Development
 
@@ -62,4 +70,4 @@ This project is proprietary and all rights are reserved by TriStorm Restoration.
 
 For inquiries about TriStorm Restoration's services, please visit our website or use the contact information provided on the site.
 
-This website was developed by [Michiana.dev](https://michiana.dev).
+This website was developed by [Michiana.dev](https://michiana.dev). For technical inquires regarding this repository, please contact the lead developer.
