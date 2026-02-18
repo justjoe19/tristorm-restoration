@@ -295,3 +295,14 @@ h6,
     margin-bottom: 15px;
     /* Add margin below text */
 }
+
+.trust-badge {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    background-color: var(--light-bg);
+    border: 1px solid var(--primary-dark);
+    border-radius: 0.5rem;
+    font-weight: 600;
+    color: var(--black);
+    text-transform: uppercase;
+}
