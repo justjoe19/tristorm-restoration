@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     
-    const navLinks = document.querySelectorAll('.navbar-nav a');
+    const navLinks = document.querySelectorAll('.navbar-nav a, .smooth-scroll');
     const navbarToggler = document.querySelector('.navbar-toggler');
     const navbarCollapse = document.getElementById('navbarNav');
     const nav = document.querySelector('nav');
