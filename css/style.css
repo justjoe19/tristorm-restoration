@@ -20,6 +20,11 @@ html {
     scroll-behavior: smooth;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     color: #444;
@@ -30,13 +35,7 @@ body {
     padding-top: 40px; /* Leave space for the scrolling banner */
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.navbar-brand {
+h1, h2, h3, h4, h5, h6, .navbar-brand {
     font-family: 'Lexend', sans-serif;
     letter-spacing: -0.5px;
     color: var(--black);
@@ -44,45 +43,22 @@ h6,
 }
 
 /* --- Utility Classes --- */
-.text-navy {
-    color: var(--black) !important;
-}
-
-.bg-navy {
-    background-color: var(--black) !important;
-}
-
-.text-primary {
-    color: var(--primary) !important;
-}
-
-/* Used for badges and icon containers to provide a subtle background */
-.bg-primary-subtle {
-    background-color: rgba(253, 187, 45, 0.12) !important;
-}
+.text-navy { color: var(--black) !important; }
+.bg-navy { background-color: var(--black) !important; }
+.text-primary { color: var(--primary) !important; }
+.bg-primary-subtle { background-color: rgba(253, 187, 45, 0.12) !important; }
 
 /* --- Navigation --- */
-.navbar {
-    transition: all 0.3s ease;
-    min-height: var(--navbar-height);
-}
-
+.navbar { transition: all 0.3s ease; min-height: var(--navbar-height); }
 .navbar-light .navbar-nav .nav-link {
     color: var(--black);
     font-size: 0.95rem;
     font-weight: 600;
     transition: color 0.3s ease;
 }
-
 .navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
-    color: var(--primary-dark);
-}
-
-/* The navbar is stuck to the top, but below the banner */
-.sticky-top {
-    top: 40px;
-}
+.navbar-light .navbar-nav .nav-link.active { color: var(--primary-dark); }
+.sticky-top { top: 40px; }
 
 /* --- Hero Section --- */
 .hero-section {
@@ -101,13 +77,11 @@ h6,
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
 }
-
 .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
     filter: brightness(1.1);
 }
-
 .btn-outline-navy {
     background-color: var(--black);
     color: var(--white) !important;
@@ -116,72 +90,36 @@ h6,
     padding: 0.8rem 2rem;
     transition: all 0.3s ease;
 }
-
-.btn-outline-navy:hover,
-.btn-outline-navy:active {
+.btn-outline-navy:hover, .btn-outline-navy:active {
     background-color: var(--dark-grey);
     color: var(--white) !important;
     border-color: var(--dark-grey);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
-
 .btn-outline-gold {
     color: var(--black);
     border: 2px solid var(--primary-dark);
     font-weight: 600;
     transition: all 0.3s ease;
 }
-
-.btn-outline-gold:hover {
-    background-color: var(--primary-dark);
-    color: var(--black);
-}
+.btn-outline-gold:hover { background-color: var(--primary-dark); color: var(--black); }
 
 /* --- Cards & Sections --- */
-.service-card {
-    transition: all 0.3s ease;
-    border-radius: 1rem;
-    overflow: hidden;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
-}
-
-.py-6 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-}
+.service-card { transition: all 0.3s ease; border-radius: 1rem; overflow: hidden; }
+.service-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important; }
+.py-6 { padding-top: 5rem; padding-bottom: 5rem; }
 
 /* --- Hover & Interaction --- */
-.hover-lift {
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
-}
-
-.hover-lift:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1) !important;
-}
+.hover-lift { transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease; }
+.hover-lift:hover { transform: translateY(-8px); box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1) !important; }
 
 /* --- Form Styling --- */
-.form-control,
-.form-select {
-    border-radius: 0.5rem;
-    border: 1px solid #ddd;
-    padding: 0.75rem 1rem;
-}
-
-.form-control:focus,
-.form-select:focus {
-    box-shadow: 0 0 0 0.25rem rgba(253, 187, 45, 0.2);
-    border-color: var(--primary-dark);
-}
+.form-control, .form-select { border-radius: 0.5rem; border: 1px solid #ddd; padding: 0.75rem 1rem; }
+.form-control:focus, .form-select:focus { box-shadow: 0 0 0 0.25rem rgba(253, 187, 45, 0.2); border-color: var(--primary-dark); }
 
 /* --- Responsive Fixes --- */
 @media (max-width: 991px) {
-    /* On smaller screens, the navbar collapses into a menu */
     .navbar-collapse {
         background: var(--white);
         padding: 1.5rem;
@@ -191,57 +129,17 @@ h6,
     }
 }
 
-/*
-  The carousel cards have different amounts of text, which causes the carousel
-  to change height when the slide changes. To fix this, we set a min-height
-  on the carousel and a fixed height on the cards.
-*/
-#reviewCarousel .carousel-inner {
-    min-height: 450px;
-}
+#reviewCarousel .carousel-inner { min-height: 450px; }
+#reviewCarousel .carousel-item { min-height: 450px; position: absolute; width: 100%; }
+#reviewCarousel .carousel-item.active { position: relative; }
+#reviewCarousel .card { height: 430px; display: flex; flex-direction: column; }
+#reviewCarousel .card-body { display: flex; flex-direction: column; justify-content: space-between; flex: 1; overflow: hidden; }
+#reviewCarousel .card-body p { flex-grow: 1; overflow-y: auto; }
 
-#reviewCarousel .carousel-item {
-    min-height: 450px;
-    position: absolute;
-    width: 100%;
-}
-
-#reviewCarousel .carousel-item.active {
-    position: relative;
-}
-
-#reviewCarousel .card {
-    height: 430px;
-    display: flex;
-    flex-direction: column;
-}
-
-#reviewCarousel .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
-    overflow: hidden;
-}
-
-#reviewCarousel .card-body p {
-    flex-grow: 1;
-    overflow-y: auto; /* The text can be long, so we allow scrolling */
-}
-
-/* Adjust heights for desktop */
 @media (min-width: 768px) {
-    #reviewCarousel .carousel-inner {
-        min-height: 400px;
-    }
-
-    #reviewCarousel .carousel-item {
-        min-height: 400px;
-    }
-
-    #reviewCarousel .card {
-        height: 380px;
-    }
+    #reviewCarousel .carousel-inner { min-height: 400px; }
+    #reviewCarousel .carousel-item { min-height: 400px; }
+    #reviewCarousel .card { height: 380px; }
 }
 
 /* --- Team Section --- */
@@ -252,14 +150,9 @@ h6,
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-    min-height: 350px; /* Ensures all cards are the same height */
+    min-height: 350px;
 }
-
-.team-member-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
+.team-member-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
 .team-member-card img {
     width: 150px !important;
     height: 150px !important;
@@ -268,20 +161,8 @@ h6,
     border-radius: 50% !important;
     margin: 20px auto 10px auto;
 }
-
-.team-member-card .card-body {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: space-between;
-    padding-bottom: 20px; /* Match top margin of image */
-}
-
-.team-member-card .card-body p.card-text {
-    flex-grow: 1;
-    overflow: hidden;
-    margin-bottom: 15px;
-}
+.team-member-card .card-body { display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; padding-bottom: 20px; }
+.team-member-card .card-body p.card-text { flex-grow: 1; overflow: hidden; margin-bottom: 15px; }
 
 .trust-badge {
     display: inline-block;
@@ -305,29 +186,15 @@ h6,
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1031; /* Appears above the sticky navbar */
+    z-index: 1031;
     height: 40px;
 }
-
-.banner-content {
-    display: flex;
-    width: fit-content;
-    animation: scroll-left 40s linear infinite;
-}
-
+.banner-content { display: flex; width: fit-content; animation: scroll-left 40s linear infinite; }
 .scrolling-banner span {
     font-family: 'Lexend', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 0.9rem;
-    margin-right: 50px; /* Space between repetitions of the text */
+    margin-right: 50px;
 }
-
-@keyframes scroll-left {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
-    }
-}
+@keyframes scroll-left { from { transform: translateX(0); } to { transform: translateX(-50%); } }

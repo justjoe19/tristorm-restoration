@@ -122,8 +122,13 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Google Fonts: Inter (Clean Sans) & Lexend (Headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lexend:wght@600;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lexend:wght@600;700&display=swap" rel="stylesheet">
+    </noscript>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#mainNav" tabindex="0">
@@ -148,6 +153,7 @@
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="images/navlogo.webp" alt="TriStorm Restoration Logo"
+                    width="882" height="295"
                     style="height: 50px; width: auto; border: 1.5px solid #D4AF37;"
                     class="d-inline-block align-top rounded-2 shadow-sm">
             </a>
@@ -168,7 +174,8 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <main>
+        <!-- Hero Section -->
     <header id="home" class="hero-section d-flex align-items-center">
         <div class="container">
             <div class="row align-items-center">
@@ -179,18 +186,19 @@
                     </div>
                     <h1 class="display-4 fw-bold text-navy mb-3 lh-sm">Restoring Your Property, <span
                             class="text-primary">Restoring Your Life.</span></h1>
-                    <p class="lead text-muted mb-3">Expert restoration services for water, fire, and storm damage. We
-                        handle the insurance paperwork so you don't have to.</p>
+                    <h2 class="lead text-muted mb-3 fs-5">Expert <strong>water, fire, and storm damage restoration</strong> in Michiana. We handle the insurance paperwork so you don't have to.</h2>
                 </div>
                 <div class="col-lg-6 mb-4">
-                    <img src="images/hero.webp" alt="TriStorm Restoration Professional Equipment"
+                    <img src="images/hero.webp" alt="Professional water and fire damage restoration equipment used by TriStorm Restoration in Michiana"
+                        width="1002" height="800"
+                        fetchpriority="high"
                         class="img-fluid rounded-4 shadow-lg"
                         style="width: 100%; object-fit: cover; border: 2px solid #D4AF37">
                 </div>
                 <div class="d-grid gap-3 d-sm-flex">
-                    <a href="#contact" class="smooth-scroll btn btn-primary btn-lg px-5 py-3 fw-bold rounded-pill shadow-sm">Get
+                    <a href="#contact" title="Contact TriStorm Restoration for Emergency Services" class="smooth-scroll btn btn-primary btn-lg px-5 py-3 fw-bold rounded-pill shadow-sm">Get
                         Help Now</a>
-                    <a href="#services" class="smooth-scroll btn btn-outline-navy btn-lg px-5 py-3 fw-bold rounded-pill">View
+                    <a href="#services" title="Browse our restoration services" class="smooth-scroll btn btn-outline-navy btn-lg px-5 py-3 fw-bold rounded-pill">View
                         Services</a>
                 </div>
             </div>
@@ -209,7 +217,7 @@
                 <!-- Service 1 -->
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm service-card">
-                        <img src="images/247.webp" class="card-img-top" alt="24/7 Emergency Services">
+                        <img src="images/247.webp" class="card-img-top" alt="24/7 Emergency Services" width="1086" height="724" loading="lazy">
                         <div class="card-body p-4 p-lg-5">
                             <h3 class="h4 fw-bold text-navy">24/7 Emergency Services</h3>
                             <p class="text-muted mb-0">Ready to respond any time, day or night, to secure your property.
@@ -220,7 +228,7 @@
                 <!-- Service 2 -->
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm service-card">
-                        <img src="images/fire.webp" class="card-img-top" alt="Fire & Smoke">
+                        <img src="images/fire.webp" class="card-img-top" alt="Fire & Smoke" width="1086" height="724" loading="lazy">
                         <div class="card-body p-4 p-lg-5">
                             <h3 class="h4 fw-bold text-navy">Fire & Smoke</h3>
                             <p class="text-muted mb-0">Complete soot removal, deodorization, and structural cleaning
@@ -231,7 +239,7 @@
                 <!-- Service 3 -->
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm service-card">
-                        <img src="images/hail.webp" class="card-img-top" alt="Storm Recovery">
+                        <img src="images/hail.webp" class="card-img-top" alt="Storm Recovery" width="1086" height="724" loading="lazy">
                         <div class="card-body p-4 p-lg-5">
                             <h3 class="h4 fw-bold text-navy">Storm Recovery</h3>
                             <p class="text-muted mb-0">Emergency board-ups, tarping, and debris removal to secure your
@@ -242,7 +250,7 @@
                 <!-- Service 4 -->
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm service-card">
-                        <img src="images/mold.webp" class="card-img-top" alt="Mold Remediation">
+                        <img src="images/mold.webp" class="card-img-top" alt="Mold Remediation" width="1086" height="724" loading="lazy">
                         <div class="card-body p-4 p-lg-5">
                             <h3 class="h4 fw-bold text-navy">Mold Remediation</h3>
                             <p class="text-muted mb-0">Safe and effective mold removal to protect your property and
@@ -253,7 +261,7 @@
                 <!-- Service 5 -->
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm service-card">
-                        <img src="images/water.webp" class="card-img-top" alt="Water Mitigation">
+                        <img src="images/water.webp" class="card-img-top" alt="Water Mitigation" width="1086" height="724" loading="lazy">
                         <div class="card-body p-4 p-lg-5">
                             <h3 class="h4 fw-bold text-navy">Water Mitigation</h3>
                             <p class="text-muted mb-0">Rapid extraction and structural drying to prevent mold growth and
@@ -264,7 +272,7 @@
                 <!-- Service 6 -->
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm service-card">
-                        <img src="images/inventory.webp" class="card-img-top" alt="Contents & Inventory">
+                        <img src="images/inventory.webp" class="card-img-top" alt="Contents & Inventory" width="1086" height="724" loading="lazy">
                         <div class="card-body p-4 p-lg-5">
                             <h3 class="h4 fw-bold text-navy">Contents & Inventory</h3>
                             <p class="text-muted mb-0">Detailed inventory, pack-out, and restoration of your personal
@@ -290,7 +298,7 @@
                         <!-- Team Member 1 -->
                         <div class="col-md-4">
                             <div class="team-member-card text-center border-0 h-100">
-                                <img src="images/erin.webp" class="rounded-circle" alt="Erin Smith">
+                                <img src="images/erin.webp" class="rounded-circle" alt="Erin Smith" width="1024" height="1024" loading="lazy">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title fw-bold mb-1 text-primary">Erin Smith</h5>
                                     <p class="card-text">Owner | Financial Operations</p>
@@ -304,7 +312,7 @@
                         <!-- Team Member 2 -->
                         <div class="col-md-4">
                             <div class="team-member-card text-center border-0 h-100">
-                                <img src="images/hannah.webp" class="rounded-circle" alt="Hannah Hoetger">
+                                <img src="images/hannah.webp" class="rounded-circle" alt="Hannah Hoetger" width="784" height="832" loading="lazy">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title fw-bold mb-1 text-primary">Hannah Hoetger</h5>
                                     <p class="card-text">Owner | Client Relations & Community Outreach</p>
@@ -318,7 +326,7 @@
                         <!-- Team Member 3 -->
                         <div class="col-md-4">
                             <div class="team-member-card text-center border-0 h-100">
-                                <img src="images/hayley.webp" class="rounded-circle" alt="Hayley McCarty">
+                                <img src="images/hayley.webp" class="rounded-circle" alt="Hayley McCarty" width="1024" height="1024" loading="lazy">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title fw-bold mb-1 text-primary">Hayley McCarty</h5>
                                     <p class="card-text">Owner | Marketing & Branding Director</p>
@@ -332,7 +340,7 @@
                         <!-- Team Member 4 -->
                         <div class="col-md-4">
                             <div class="team-member-card text-center border-0 h-100">
-                                <img src="images/logan.webp" class="rounded-circle" alt="Logan Burnett">
+                                <img src="images/logan.webp" class="rounded-circle" alt="Logan Burnett" width="1024" height="1024" loading="lazy">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title fw-bold mb-1 text-primary">Logan Burnett</h5>
                                     <p class="card-text">Director of Operations</p>
@@ -346,7 +354,7 @@
                         <!-- Team Member 5 -->
                         <div class="col-md-4">
                             <div class="team-member-card text-center border-0 h-100">
-                                <img src="images/jon.webp" class="rounded-circle" alt="Jon Smith">
+                                <img src="images/jon.webp" class="rounded-circle" alt="Jon Smith" width="997" height="981" loading="lazy">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title fw-bold mb-1 text-primary">Jon Smith</h5>
                                     <p class="card-text">Managing Director</p>
@@ -360,7 +368,7 @@
                         <!-- Team Member 6 -->
                         <div class="col-md-4">
                             <div class="team-member-card text-center border-0 h-100">
-                                <img src="images/josh.webp" class="rounded-circle" alt="Josh Hoetger">
+                                <img src="images/josh.webp" class="rounded-circle" alt="Josh Hoetger" width="881" height="961" loading="lazy">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title fw-bold mb-1 text-primary">Josh Hoetger</h5>
                                     <p class="card-text">Independent Claims Consultant</p>
@@ -675,13 +683,12 @@
                         </div>
                     </form>
                 </div>
-            </div>
         </div>
     </section>
+</main>
 
-    <!-- Footer -->
-    <footer class="py-4 bg-navy text-center border-top border-secondary">
-        <div class="container">
+<!-- Footer -->
+<footer class="py-4 bg-navy text-center border-top border-secondary">        <div class="container">
             <p class="text-white-50 mb-2 small">&copy; <span id="year"></span> TriStorm Restoration. All Rights Reserved.</p>
             <p class="mb-0 small">
                 <!-- Update this href if your portfolio URL is different -->
@@ -819,10 +826,10 @@
     </div>
 
     <!-- Local Bootstrap JS -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js" defer></script>
 
     <!-- Custom Script -->
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 
 </html>
