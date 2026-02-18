@@ -17,7 +17,7 @@
 
 /* --- Global Settings --- */
 html {
-    scroll-padding-top: var(--navbar-height);
+    scroll-padding-top: calc(var(--navbar-height) + 40px); /* Account for banner height */
     scroll-behavior: smooth;
 }
 
@@ -28,6 +28,7 @@ body {
     line-height: 1.7;
     width: 100%;
     margin: 0;
+    padding-top: 40px; /* Space for scrolling banner */
 }
 
 h1,
@@ -85,6 +86,11 @@ h6,
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--primary-dark);
+}
+
+/* Adjust sticky navbar position */
+.sticky-top {
+    top: 40px; /* Height of the banner */
 }
 
 /* --- Hero Section --- */
@@ -305,4 +311,42 @@ h6,
     font-weight: 600;
     color: var(--black);
     text-transform: uppercase;
+}
+
+/* --- Scrolling Banner --- */
+.scrolling-banner {
+    background: var(--primary-dark);
+    color: var(--black);
+    padding: 0.5rem 0;
+    white-space: nowrap;
+    overflow: hidden;
+    position: fixed; /* Keep banner at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1031; /* Above sticky navbar */
+    height: 40px; /* Explicit height */
+}
+
+.banner-content {
+    display: flex; /* Changed */
+    width: fit-content; /* Added */
+    animation: scroll-left 40s linear infinite; /* Changed duration */
+}
+
+.scrolling-banner span {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-right: 50px; /* Space between repetitions */
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
