@@ -62,9 +62,8 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 
 /* --- Hero Section --- */
 .hero-section {
-    min-height: 80vh;
     background: linear-gradient(180deg, #ffffff 0%, #f9f9f9 100%);
-    padding: 60px 0;
+    padding: 40px 0 48px;
 }
 
 /* --- Buttons --- */
