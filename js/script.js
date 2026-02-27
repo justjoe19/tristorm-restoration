@@ -55,4 +55,32 @@ document.addEventListener('DOMContentLoaded', function () {
         yearSpan.textContent = new Date().getFullYear();
     }
 
+    /**
+     * Contact Form Submission
+     * Handles Netlify form submission via AJAX to show a thank you message without redirecting.
+     */
+    const contactForm = document.getElementById('contact-form');
+    const formSuccess = document.getElementById('form-success');
+
+    if (contactForm && formSuccess) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(contactForm);
+            
+            fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString(),
+            })
+            .then(() => {
+                contactForm.classList.add('d-none');
+                formSuccess.classList.remove('d-none');
+                // Scroll to the success message
+                formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            })
+            .catch((error) => alert('There was an error submitting the form. Please try again or call us directly.'));
+        });
+    }
+
 });

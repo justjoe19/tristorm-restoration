@@ -591,7 +591,7 @@
 
                 <!-- Contact Form -->
                 <div class="col-lg-8">
-                    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field"
+                    <form id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field"
                         class="bg-white p-4 p-md-5 rounded-4 shadow-sm h-100">
                         <input type="hidden" name="form-name" value="contact" />
                         <input type="hidden" name="bot-field" />
@@ -685,6 +685,18 @@
                             </div>
                         </div>
                     </form>
+                    <!-- Success Message -->
+                    <div id="form-success" class="bg-white p-4 p-md-5 rounded-4 shadow-sm h-100 d-none text-center d-flex flex-column justify-content-center">
+                        <div class="mb-4 text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+                                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="h2 fw-bold text-navy mb-3">Thank You!</h3>
+                        <p class="lead text-muted mb-4">Your message has been sent successfully. We will get back to you as soon as possible.</p>
+                        <button type="button" class="btn btn-primary rounded-pill px-5 py-3 fw-bold shadow-sm align-self-center" onclick="location.reload()">Send Another Message</button>
+                    </div>
                 </div>
         </div>
     </section>
